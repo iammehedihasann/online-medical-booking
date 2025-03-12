@@ -8,10 +8,12 @@ const TopDoctor = () => {
   const navigate = useNavigate();
   const { doctors } = useContext(AppContext);
   return (
-    <div className="flex flex-col items-center gap-6 my-16 text-gray-900 md:mx-10">
+    <div className=" flex flex-col items-center justify-between  text-black p-2  max-w-6xl mx-auto mb-8 mt-10">
       {/* Section Title */}
-      <h1 className="text-3xl font-bold text-center">Top Doctors To Book</h1>
-      <p className="text-center text-gray-600 max-w-lg">
+      <h1 className="text-3xl font-bold text-center pb-4">
+        Top Doctors To Book
+      </h1>
+      <p className="text-center text-gray-600 max-w-lg pb-4">
         Simply browse through our extensive list of trusted doctors.
       </p>
 
