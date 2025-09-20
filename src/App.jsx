@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Doctors from "./Pages/Doctors";
 import Contact from "./Pages/Contact";
@@ -18,9 +18,8 @@ const App = () => {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/doctor" element={<Doctors />} />
-          <Route path="/doctor/:speciality" element={<Doctors />} />
+          <Route path="/doctor/:specialityData" element={<Doctors />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
@@ -29,8 +28,6 @@ const App = () => {
           <Route path="/appoinment/:docId" element={<Appointment />} />
         </Routes>
       </div>
-
-      <Footer />
     </div>
   );
 };
