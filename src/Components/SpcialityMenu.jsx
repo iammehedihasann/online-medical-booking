@@ -4,9 +4,14 @@ import { Link } from "react-router-dom";
 
 const SpecialityMenu = () => {
   return (
-    <div id="speciality" className="p-6">
-      <h1 className="text-2xl font-bold text-center">Find by Speciality</h1>
-      <p className="text-center text-gray-600 mb-6">
+    <div
+      id="speciality"
+      className=" items-center justify-between  text-black p-2  max-w-6xl mx-auto mb-8 mt-10"
+    >
+      <h1 className="text-2xl font-bold text-center pb-4">
+        Find By Speciality
+      </h1>
+      <p className="text-center text-gray-600 mb-6 pb-4">
         Simply browse through our extensive list of trusted doctors, schedule
         your appointment hassle-free.
       </p>
