@@ -11,33 +11,34 @@ const Navbar = () => {
 
   return (
     <div className="flex  md:flex-row  items-center justify-between  text-black p-4  max-w-6xl mx-auto border-b mb-8 border-b-gray-400">
-      <img src={assets.logo} alt="Navbar_image" />
+      <img
+        onClick={() => navigate("/")}
+        src={assets.logo}
+        alt="Navbar_image"
+        className="cursor-pointer"
+      />
       <ul className="flex gap-5 font-style-none md:ml-3 ">
         <NavLink className="hover:border-b hover:border-b-gray-500 duration-300">
           <li className="py-1">
-            {" "}
             <Link to="/">HOME</Link>
           </li>
         </NavLink>
 
         <NavLink className="hover:border-b hover:border-b-green-500 duration-300">
           <li className="py-1">
-            {" "}
-            <Link to="/doctor">DOCTOR</Link>{" "}
+            <Link to="/doctor">DOCTOR</Link>
           </li>
         </NavLink>
 
         <NavLink className="hover:border-b hover:border-b-green-500 duration-300">
           <li className="py-1">
-            {" "}
-            <Link to="/about">ABOUT</Link>{" "}
+            <Link to="/about">ABOUT</Link>
           </li>
         </NavLink>
 
         <NavLink className="hover:border-b hover:border-b-green-500 duration-300">
           <li className="py-1">
-            {" "}
-            <Link to="/contact">CONTACT</Link>{" "}
+            <Link to="/contact">CONTACT</Link>
           </li>
         </NavLink>
       </ul>

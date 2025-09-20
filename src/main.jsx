@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppContextProvider from "./Context/AppContext.jsx";
 import App from "./App.jsx";
 import "./index.css";
+import Footer from "./Components/Footer.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
